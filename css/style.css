@@ -426,12 +426,27 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .header {
-        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        position: relative;
     }
 
     .logo {
         font-size: 1rem;
+    }
+
+    .home {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
     }
 
     .home-title {
@@ -445,5 +460,25 @@ textarea {
     .home-buttons .btn {
         padding: 0.6rem 1rem;
         font-size: 0.8rem;
+    }
+
+    .section-nosotros {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .main-content {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-reserva {
+        width: 300px;
+        padding: 10px;
     }
 }
